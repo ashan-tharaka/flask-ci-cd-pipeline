@@ -17,7 +17,7 @@ jobs:
 
       - name: Deploy the container
         env:
-          DOCKER_HOST: tcp://0.0.0.0:2375
+          DOCKER_HOST: tcp://192.168.8.100:2375
           # TLS-related variables are removed
         run: |
           docker stop flask-ci-cd || true
