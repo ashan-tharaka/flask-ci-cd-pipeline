@@ -43,7 +43,7 @@ jobs:
       env:
         DOCKER_HOST: ${{ secrets.DOCKER_HOST }}
         DOCKER_CERT_PATH: ${{ secrets.DOCKER_CERT_PATH }}
-        DOCKER_TLS_VERIFY: 1
+        DOCKER_TLS_VERIFY: 0
       run: |
         docker pull ashantharaka/flask-ci-cd-example:latest
         docker stop flask-ci-cd || true
